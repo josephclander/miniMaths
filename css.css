@@ -1,0 +1,221 @@
+body {
+  position: relative;
+  margin: 0 auto;
+  font-family: Helvetica; Arial; sans-serif;
+  font-size: 1em;
+  /*background-color: lightgrey;*/
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.wrap {
+  margin: 20px auto;
+  width: 90%;
+  min-height: 85vh;
+}
+
+.videoFrame {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoFrame iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+table,
+.box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box ul {
+  padding: 0;
+  text-align: center;
+}
+
+h1 a,
+.box a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a {
+  letter-spacing: .1em;
+}
+
+.box a {
+  display: inline-block;
+  padding: .5em 0;
+  width: 100%;
+  text-align: center;
+}
+
+.box li {
+  display: inline-block;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 10px 10px 0;
+  width: 100%;
+  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
+  transition-duration: .2s;
+}
+
+.box li:hover {
+  box-shadow: 5px 5px 5px 0 rgba(200,0,0,0.5);
+}
+
+.box li:active {
+  box-shadow: none;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.header {
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: rgba(0,0,0,.3);
+}
+
+.content {
+  margin: 40px auto;
+
+}
+
+/* Need to adapt this line so that a border appears underneath */
+.article {
+  border-bottom: solid 1px #000000;
+}
+
+.header span {
+  color: lightblue;
+}
+
+a{color: #0066ff;text-decoration:none}
+a:hover,a:focus{color:#165db5;text-decoration:underline;}
+a:visited {text-decoration: none;}
+
+h1 a:hover, 
+.box a:hover,
+.header a:hover span {
+  text-decoration: none;
+  color: darkblue;
+}
+
+table, th, td {
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+table {
+  width: ;
+}
+
+td {
+  background-color: rgba(240,240,240,.8);
+}
+
+.moduleTitle {
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  padding: 10px;
+  background-color: lightpink;
+}
+
+.chapterTitle {
+  font-weight: bold;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.footer {
+  background-color: grey;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer ul li {
+    font-size: 1.2em;
+    list-style-type: none;
+    display: inline;
+    margin: 10px 20px 10px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*************************
+helper
+*************************/
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+li.selected {
+  background-color: lightpink;
+}
+
+
+/*************************
+Drop down menu
+*************************/
+
+.mod_header {
+  display: none;
+
+}
+
+
+
+/*************************
+Media Queries
+*************************/
+
+
+@media screen and (min-width: 380px) {
+  .box li {
+    width: 45%;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .box li {
+    width: 30%;
+    max-width: 400px;
+  }
+}
+
